@@ -7,18 +7,21 @@
 	    android:id="@+id/subject"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
+	    android:padding="8dp"
+	    android:textStyle="bold"
 	    />
 	<TextView
 	    android:id="@+id/sender"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
+	    android:padding="8dp"
 	    />
-	<WebView
+	<TextView
 	    android:id="@+id/body"
 	    android:layout_width="match_parent"
 	    android:layout_height="0dp"
 	    android:layout_weight="1"
-	    android:theme="@style/AppTheme"
+	    android:padding="8dp"
 	    />
 	    
 </LinearLayout>

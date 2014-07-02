@@ -11,10 +11,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 public class Email {
-	int id;
-	String from;
-	String subject;
-	String body;
+	private int id;
+	private String from;
+	private String subject;
+	private String body;
 
 	public Email(int id, String from, String subject){
 		this.id = id;
@@ -40,8 +40,9 @@ public class Email {
 	}
 	
 	public int id(){ return id; }
-	public String from(){ return from; }
-	public String subject(){ return subject; }
+	public String from(){ if(from.trim().length() > 0) return from; else return "No sender…"; }
+	public String subject(){ if(subject.trim().length() > 0) return subject; else return "No subject…"; }
+	public String body(){ return body; }
 	
 	public String fetchBody(){
 		if(body != null)
