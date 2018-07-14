@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.1"
+
+    defaultConfig {
+        applicationId "fr.codl.spaceemail"
+        minSdkVersion 19
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation "com.android.support:support-v4:27.0.2"
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+}

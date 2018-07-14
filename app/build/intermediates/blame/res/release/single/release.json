@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_part_time.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/menu_main.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_media.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_big_media_narrow.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_big_media_custom.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/xml_preferences.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_message_fragment.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/layout/message_fragment.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_email_list_fragment.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/layout/email_list_fragment.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_icon_group.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_action_tombstone.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_media_custom.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_list_email.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/layout/list_email.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_media_action.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable_notification_tile_bg.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_action.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi_ic_launcher.png.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_activity_message_read.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/layout/activity_message_read.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable_notification_bg.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable_notification_bg_low.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_lines_media.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_template_big_media.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout-v16_notification_template_custom_big.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout-v16/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout-v21_notification_action.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable_notification_icon_background.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-v21_notification_action_background.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_activity_main.xml.flat",
+        "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/res/merged/release/layout_notification_media_cancel_action.xml.flat",
+        "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/layout/notification_media_cancel_action.xml"
+    }
+]

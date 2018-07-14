@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/codl/AndroidStudioProjects/SpaceEmail/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/e2d26ecbf4da2dfc34187924c9ac3c13/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "10,13,17,21",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "673,841,1130,1426",
+                        "endLines": "12,15,19,23",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "836,999,1293,1588"
+                    }
+                },
+                {
+                    "source": "/home/codl/AndroidStudioProjects/SpaceEmail/app/src/main/res/values-v21/styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "2",
+                        "endColumns": "12",
+                        "endOffsets": "88"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "426"
+                    }
+                },
+                {
+                    "source": "/home/codl/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/773df935b63892b65f6b3a06429a0468/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,354,470,596,722,850,1022",
+                        "endLines": "2,3,4,5,6,7,8,9,12,17",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,8,9,16,20,24,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,223,290,431,547,1004,1298,1593,1765",
+                        "endLines": "2,3,4,5,8,9,16,20,26,31",
+                        "endColumns": "103,63,66,63,115,125,125,127,12,12",
+                        "endOffsets": "154,218,285,349,542,668,1125,1421,1760,2098"
+                    }
+                }
+            ]
+        }
+    ]
+}
