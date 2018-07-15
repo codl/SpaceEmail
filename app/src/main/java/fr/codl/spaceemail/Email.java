@@ -15,6 +15,7 @@ public class Email {
 	private String from;
 	private String subject;
 	private String body;
+	private String date;
 
 	public Email(int id, String from, String subject){
 		this.id = id;
@@ -22,37 +23,41 @@ public class Email {
 		this.subject = subject;
 	}
 
-	public Email(int id, String from, String subject, String body){
+	public Email(int id, String from, String subject, String body, String date){
 		this.id = id;
 		this.from = from;
 		this.subject = subject;
-		this.body = body;
+        this.body = body;
+        this.date = date;
 	}
 	
 	public static Email get(SQLiteDatabase db, int id){
-		Cursor c = db.query("emails", new String[]{"sender", "subject", "body"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null, null);
+		Cursor c = db.query("emails", new String[]{"sender", "subject", "body", "date"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null, null);
 		c.moveToFirst();
 		String from = c.getString(0);
 		String subject = c.getString(1);
-		String body = c.getString(2);
-		Email e = new Email(id, from, subject, body);
+        String body = c.getString(2);
+        String date = c.getString(3);
+		Email e = new Email(id, from, subject, body, date);
 		return e;
 	}
 	
 	public int id(){ return id; }
 	public String from(){ if(from.trim().length() > 0) return from; else return "No sender…"; }
 	public String subject(){ if(subject.trim().length() > 0) return subject; else return "No subject…"; }
-	public String body(){ return body; }
+    public String body(){ return body; }
+    public String date(){ return date; }
 	
-	public String fetchBody(){
-		if(body != null)
-			return body;
-		
-		body = SpaceEmailAPI.getBody(id);
-		return body;
-	}
+	public void fetch(){
+		String html = SpaceEmailAPI.getEmail(id);
+		Document doc = Jsoup.parse(html);
+        subject = doc.getElementById("msgSubject").text();
+        from = doc.getElementById("msgSender").text();
+        body = doc.getElementById("msgBody").html();
+        date = doc.getElementById("msgDate").text();
+    }
 	
-	public static Email fromHtml(String html){
+	public static Email fromListing(String html){
 		Document doc = Jsoup.parse(html);
 		Elements divs = doc.getElementsByTag("div");
 		if(divs.size() < 1)
@@ -78,20 +83,22 @@ public class Email {
 	}
 	
 	public Boolean create(SQLiteDatabase db){
-		ContentValues row = new ContentValues(3);
+		ContentValues row = new ContentValues(5);
 		row.put("id", id);
 		row.put("sender", from);
 		row.put("subject", subject);
-		row.put("body", body);
+        row.put("body", body);
+        row.put("date", date);
 		return db.insert("emails", null, row) != -1;
 	}
 	
 	public Boolean save(SQLiteDatabase db){
-		ContentValues row = new ContentValues(3);
+		ContentValues row = new ContentValues(5);
 		row.put("id", id);
 		row.put("sender", from);
 		row.put("subject", subject);
-		row.put("body", body);
+        row.put("body", body);
+        row.put("date", date);
 		return db.update("emails", row, "id = ?", new String[]{String.format("%d", id)}) != -1;
 	}
 }

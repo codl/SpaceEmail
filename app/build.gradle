@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "fr.codl.spaceemail"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 27
     }
 

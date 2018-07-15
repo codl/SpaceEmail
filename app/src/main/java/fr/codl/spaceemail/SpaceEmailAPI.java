@@ -33,25 +33,31 @@ public class SpaceEmailAPI {
 	        os.write(rawData);
 	        InputStream is = conn.getInputStream();
 	        Reader reader = new InputStreamReader(is, "UTF-8");        
-	        char[] buffer = new char[10000];
-	        reader.read(buffer);
-	        String result = new String(buffer).trim(); // the trim is necessary to remove all the trailing NUL characters
+	        int chars_read = 0;
+	        String result = new String();
+            char[] buffer = new char[8192];
+	        while(chars_read != -1){
+	            Log.v("SpaceEmailAPI", String.format("chars_read: %s", chars_read));
+                chars_read = reader.read(buffer);
+                result = result.concat(new String(buffer).trim());
+                // the trim is necessary to remove all the trailing NUL characters
+            }
 	        Log.v("SpaceEmailAPI", String.format("Received: %s", result));
 	        return result;
 		} catch (Exception e) {
 			return null;
 		}
 	}
-	public static String getMail(){
-		return get("https://space.galaxybuster.net/lib/get.php", "");
+
+	public static String newMail(){
+	    return get("https://space.galaxybuster.net/lib/get.php", "");
 	}
-	public static String getBody(int id) {
+
+	public static String getEmail(int id) {
 		try {
 			JSONArray arr = (JSONArray) new JSONTokener(get("https://space.galaxybuster.net/lib/view.php", String.format("id=%d", id))).nextValue();
 			String html = arr.getString(0);
-			Document doc = Jsoup.parse(html);
-			Element msgBody = doc.getElementById("msgBody");
-			return msgBody.html();
+			return html;
 		} catch (JSONException e) {
 			Log.e("SpaceEmailAPI", "couldn't decode incoming JSON");
 			return null;

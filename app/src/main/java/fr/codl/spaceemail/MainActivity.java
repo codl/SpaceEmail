@@ -10,6 +10,13 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Layout;
+import android.transition.Slide;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.CursorAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
@@ -19,11 +26,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 	private SQLiteDatabase db;
 	private SwipeRefreshLayout swipe;
+    //private SimpleCursorAdapter list_adapter;
+    private CursorAdapter list_adapter;
+	private Cursor cursor;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +44,21 @@ public class MainActivity extends Activity implements OnItemClickListener {
 		swipe = (SwipeRefreshLayout) findViewById(R.id.email_list_fragment);
 		SpaceEmailDbHelper helper = new SpaceEmailDbHelper(getApplicationContext());
 		db = helper.getWritableDatabase();
-		
-		loadListView();
-		ListView listView = (ListView) findViewById(R.id.emails);
+
+
+        //String[] from = new String[]{ "sender", 		"subject" 	 };
+        //int[] to = new int[]		{ R.id.sender_name, R.id.subject };
+        updateCursor();
+        //list_adapter = new SimpleCursorAdapter(getApplicationContext(), R.layout.list_email, cursor, from, to, 0);
+        list_adapter = new EmailCursorAdapter(this, cursor, 0);
+        ListView listView = findViewById(R.id.emails);
+        listView.setAdapter(list_adapter);
 		listView.setOnItemClickListener(this);
 	}
-	
-	private void loadListView(){
-		String[] from = new String[]{ "sender", 		"subject" 	 };
-		int[] to = new int[]		{ R.id.sender_name, R.id.subject };
-		Cursor cursor = db.query("emails", new String[]{"sender", "subject", "id", "_id"}, null, null, null, null, "_id DESC", null);
-		SimpleCursorAdapter adapter = new SimpleCursorAdapter(getApplicationContext(), R.layout.list_email, cursor, from, to, 0);
-		ListView listView = (ListView) findViewById(R.id.emails);
-		listView.setAdapter(adapter);
-	}
+
+	private void updateCursor(){
+        cursor = db.query("emails", new String[]{"sender", "subject", "id", "_id"}, null, null, null, null, "_id DESC", null);
+    }
 	
 	@Override
 	public void onItemClick(AdapterView<?> listView, View view, int position, long id) {
@@ -77,13 +89,13 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	private class GetMailTask extends AsyncTask<Void, Void, String> {
 
 		@Override
-		protected String doInBackground(Void... _) {
+		protected String doInBackground(Void... x) {
 			ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 			NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 			if (networkInfo == null || !networkInfo.isConnected())
 				return null;
 		    
-		    return SpaceEmailAPI.getMail();
+		    return SpaceEmailAPI.newMail();
 		}
 		
 		@Override
@@ -99,20 +111,43 @@ public class MainActivity extends Activity implements OnItemClickListener {
 				toast.show();
 			}
 			else {
-				Email.fromHtml(result).create(db);
-				loadListView();
+				Email email = Email.fromListing(result);
+				email.create(db);
+				updateCursor();
+				list_adapter.changeCursor(cursor);
+				list_adapter.notifyDataSetChanged();
 				Log.i("EmailList", "Refreshed.");
 			}
 		}
 		
 	}
 
+	private class EmailCursorAdapter extends CursorAdapter {
+	    public EmailCursorAdapter(Context context, Cursor cursor, int flags){
+	        super(context, cursor, flags);
+        }
+
+        @Override
+        public View newView(Context context, Cursor cursor, ViewGroup parent) {
+	        Activity activity = (Activity) context;
+            LayoutInflater li = activity.getLayoutInflater();
+            View view = li.inflate(R.layout.list_email, parent, false);
+            bindView(view, context, cursor);
+            return view;
+        }
+
+        @Override
+        public void bindView(View view, Context context, Cursor cursor){
+            TextView sender = view.findViewById(R.id.sender);
+            TextView subject = view.findViewById(R.id.subject);
+            sender.setText(cursor.getString(0));
+            subject.setText(cursor.getString(1));
+        }
+
+    }
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		
 		int id = item.getItemId();
 		
 		if (id == R.id.action_settings) {
