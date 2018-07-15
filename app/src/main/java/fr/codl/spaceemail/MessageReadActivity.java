@@ -50,7 +50,7 @@ public class MessageReadActivity extends Activity{
 
 
         TextView sender = findViewById(R.id.sender);
-        SpannableString sender_string = new SpannableString(String.format("from %s", m.from()));
+        SpannableString sender_string = new SpannableString(String.format("from %s", m.sender()));
 
         sender_string.setSpan(
                 new StyleSpan(android.graphics.Typeface.BOLD),

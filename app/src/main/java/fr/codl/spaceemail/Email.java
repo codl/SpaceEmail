@@ -12,20 +12,20 @@ import android.util.Log;
 
 public class Email {
 	private int id;
-	private String from;
+	private String sender;
 	private String subject;
 	private String body;
 	private String date;
 
-	public Email(int id, String from, String subject){
+	public Email(int id, String sender, String subject){
 		this.id = id;
-		this.from = from;
+		this.sender = sender;
 		this.subject = subject;
 	}
 
-	public Email(int id, String from, String subject, String body, String date){
+	public Email(int id, String sender, String subject, String body, String date){
 		this.id = id;
-		this.from = from;
+		this.sender = sender;
 		this.subject = subject;
         this.body = body;
         this.date = date;
@@ -34,16 +34,16 @@ public class Email {
 	public static Email get(SQLiteDatabase db, int id){
 		Cursor c = db.query("emails", new String[]{"sender", "subject", "body", "date"}, "id = ?", new String[]{String.valueOf(id)}, null, null, null, null);
 		c.moveToFirst();
-		String from = c.getString(0);
+		String sender = c.getString(0);
 		String subject = c.getString(1);
         String body = c.getString(2);
         String date = c.getString(3);
-		Email e = new Email(id, from, subject, body, date);
+		Email e = new Email(id, sender, subject, body, date);
 		return e;
 	}
 	
 	public int id(){ return id; }
-	public String from(){ if(from.trim().length() > 0) return from; else return "No sender…"; }
+	public String sender(){ if(sender.trim().length() > 0) return sender; else return "No sender…"; }
 	public String subject(){ if(subject.trim().length() > 0) return subject; else return "No subject…"; }
     public String body(){ return body; }
     public String date(){ return date; }
@@ -52,7 +52,7 @@ public class Email {
 		String html = SpaceEmailAPI.getEmail(id);
 		Document doc = Jsoup.parse(html);
         subject = doc.getElementById("msgSubject").text();
-        from = doc.getElementById("msgSender").text();
+        sender = doc.getElementById("msgSender").text();
         body = doc.getElementById("msgBody").html();
         date = doc.getElementById("msgDate").text();
     }
@@ -85,7 +85,7 @@ public class Email {
 	public Boolean create(SQLiteDatabase db){
 		ContentValues row = new ContentValues(5);
 		row.put("id", id);
-		row.put("sender", from);
+		row.put("sender", sender);
 		row.put("subject", subject);
         row.put("body", body);
         row.put("date", date);
@@ -95,7 +95,7 @@ public class Email {
 	public Boolean save(SQLiteDatabase db){
 		ContentValues row = new ContentValues(5);
 		row.put("id", id);
-		row.put("sender", from);
+		row.put("sender", sender);
 		row.put("subject", subject);
         row.put("body", body);
         row.put("date", date);
